@@ -1,0 +1,22 @@
+{
+	"globals": {
+		"project": {
+			"title": "Project name"
+		},
+		"navigation": {
+
+			"primary": [
+				{
+					"link": "",
+					"template": "index",
+					"title": "Главная"
+				}, 
+				{
+					"template": "404",
+					"title": "Ошибка"
+				}
+			]
+		}
+	},
+	"domains": []
+}

@@ -1,0 +1,77 @@
+@import "_reset";
+@import "_tools";
+@import "_fonts";
+@import "_variables";
+
+/* Common (common styles) */
+body, input, textarea, select, button {
+	
+	font-family: Arial, sans-serif;
+}
+
+html {
+
+	height: auto;
+	min-height: 100%;
+}
+
+body {
+
+	@include BaseFont(14px, 20px);
+	height: 100%;
+	position: relative;
+	text-rendering: optimizelegibility;
+	-webkit-font-smoothing: antialiased;
+}
+
+input, textarea, select, button {
+	
+	font-size: 1em;
+}
+
+/* Overrides extra padding in Firefox */ 
+button::-moz-focus-inner { 
+	
+	padding: 0; 
+	border: none;
+}
+
+/* Global (global styles) / prefix - g- */
+
+.g-pseudo-link {
+	
+	border-bottom: 1px dashed;
+	text-decoration: none !important;
+	cursor: pointer;
+}
+
+.g-limited {
+	
+	/* min-width, max-width */
+}
+
+.g-cleaner {
+	
+	display: block;
+	clear: both;
+	height: 0;
+	overflow: hidden;
+	font-size: 0;
+	line-height: 0;
+}
+
+.g-cleared:after {
+	
+	display: block;
+	content: ".";
+	height: 0;
+	clear: both;
+	overflow: hidden;
+	visibility: hidden;
+}
+
+.g-hidden {
+	
+	display: none !important;
+}
+

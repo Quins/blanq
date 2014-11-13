@@ -1,0 +1,9 @@
+<header class="l-header">
+	<ul class="b-primary-menu">
+		<% for (var i = 0; i < navigation.primary.length; i++) { %>
+		<li class="b-primary-menu-clause <% if (current.source == navigation.primary[i].template) { %>b-primary-menu-current-clause<% } %>">
+			<a href="/<%= (navigation.primary[i].link !== undefined ? navigation.primary[i].link : navigation.primary[i].template) %>" class="b-primary-menu-clause-link"><%= navigation.primary[i].title %></a>
+		</li>
+		<% } %>
+	</ul>
+</header>
