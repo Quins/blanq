@@ -179,6 +179,31 @@
 		only screen and (                min-resolution: 2dppx) {
 			@content;
 		}
+
+	} @else if ($mq == ipad) {
+
+		@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) { @content; }
+
+	} @else if ($mq == ipad-landscape) {
+
+		@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) { @content; }
+
+	} @else if ($mq == ipad-portrait) {
+
+		@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) { @content; }
+
+	} @else if ($mq == iphone) {
+
+		@media only screen and (min-device-width : 320px) and (max-device-width : 568px) { @content; }
+
+	} @else if ($mq == iphone-landscape) {
+
+		@media only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation: landscape) { @content; }
+
+	} @else if ($mq == iphone-portrait) {
+
+		@media only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation: portrait) { @content; }
+
 	} @else {
 
 		@media (max-width: #{$mq}px)  { @content; }
