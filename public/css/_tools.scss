@@ -168,7 +168,7 @@
 
 @mixin mq($mq) {
 
-	@if $mq == retina {
+	@if ($mq == retina) {
 
 		@media
 		only screen and (-webkit-min-device-pixel-ratio: 2),
@@ -181,6 +181,6 @@
 		}
 	} @else {
 
-		@media (max-width: #{$mq}px)  { @content; } }
+		@media (max-width: #{$mq}px)  { @content; }
 	}
 }
