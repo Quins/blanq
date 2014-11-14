@@ -1,4 +1,6 @@
-blanq
+Blanq – пустой проект для harp
 =====
 
-Blanc Harp project
+Инициализация: 
+
+    harp init projectname --boilerplate Quins/blanq
