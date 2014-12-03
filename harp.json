@@ -3,19 +3,19 @@
 		"project": {
 			"title": "Project name"
 		},
-		"navigation": {
+		"pages": {
 
-			"primary": [
-				{
-					"link": "",
-					"template": "index",
-					"title": "Главная"
-				}, 
-				{
-					"template": "404",
-					"title": "Ошибка"
-				}
-			]
+			"root": {
+				"template": "index",
+				"link": "./", 
+				"title": "Главная",
+				"navigation": "main"
+			}, 
+			"404": {
+				"template": "404",
+				"title": "Ошибка", 
+				"navigation": "errors"
+			}
 		}
 	},
 	"domains": []
