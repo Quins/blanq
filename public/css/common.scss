@@ -20,11 +20,14 @@ body {
 	@include BaseFont(14px, 20px);
 	height: 100%;
 	position: relative;
-	text-rendering: optimizelegibility;
-	-webkit-font-smoothing: antialiased;
-	-moz-font-smoothing: antialiased;
-	font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
+	text-rendering:              optimizelegibility;
+	font-smoothing:              antialiased;
+	-webkit-font-smoothing:      subpixel-antialiased !important;
+	-webkit-backface-visibility: hidden;
+	-moz-font-smoothing:         antialiased;
+	-moz-backface-visibility:    hidden;
+	-moz-osx-font-smoothing:     grayscale;
+	-ms-backface-visibility:     hidden;
 }
 
 body * {
