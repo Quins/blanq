@@ -92,3 +92,27 @@ a, a:hover {
 	display: none !important;
 }
 
+.g-selectproof {
+
+	-moz-user-select: none; 
+	-webkit-user-select: none;
+	-ms-user-select: none; 
+	user-select: none; 
+
+	-webkit-user-drag: none; 
+	-moz-user-drag: none; 
+	-ms-user-drag: none; 
+	user-drag: none;
+}
+
+
+/* Layout (prefix: l-) */
+
+
+
+/* Blocks (prefix: b-) */
+
+
+
+
+
